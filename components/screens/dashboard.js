@@ -141,6 +141,22 @@ const Dashboard = ({navigation}) => {
             </TouchableOpacity>
           </View>
 
+          <View style={STYLES.row}>
+            <TouchableOpacity
+              style={STYLES.card}
+              onPress={() => navigation.navigate('Hospital')}>
+              <View style={STYLES.cardIcon}>
+                <MIcon
+                  name="calendar"
+                  size={40}
+                  strokeSize={3}
+                  color={COLORS.BLACK}
+                />
+              </View>
+              <Text style={STYLES.cardTitle}>Hosptials</Text>
+            </TouchableOpacity>
+          </View>
+
           {/* <View style={STYLES.row}>
             <TouchableOpacity
               style={STYLES.card}
